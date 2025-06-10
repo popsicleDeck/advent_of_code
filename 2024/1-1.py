@@ -4,17 +4,17 @@ input_ = input_.replace("\n", " ")
 input_ = input_.split(" ")
 input_ = [j for _,j in enumerate(input_) if j != '']
 
-list_1 = [j for i,j in enumerate(input_) if i % 2 == 0]
-list_2 = [j for i,j in enumerate(input_) if i % 2 != 0]
+l_list = [j for i,j in enumerate(input_) if i % 2 == 0]
+r_list = [j for i,j in enumerate(input_) if i % 2 != 0]
 
-list_1 = list(map(int, list_1))
-list_2 = list(map(int, list_2))
+l_list = list(map(int, l_list))
+r_list = list(map(int, r_list))
 
 #sorting
-list_1.sort()
-list_2.sort()
+l_list.sort()
+r_list.sort()
 
-input_ = list(zip(list_1, list_2))
+input_ = list(zip(l_list, r_list))
 
 #calculation
 sum = 0
